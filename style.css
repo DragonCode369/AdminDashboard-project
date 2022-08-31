@@ -7,6 +7,11 @@ body {
 h4 {
     margin-top: 0;
     margin-bottom: 0;
+    font-style: bold;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .container {
@@ -196,12 +201,12 @@ input {
 
 .main-content-container {
     height: 100vh;
+    padding: 20px;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
     gap: 2rem;
     grid-template-columns: 3fr 1fr;
-    padding: 20px;
     box-sizing: border-box;
     background-color: rgb(226, 232, 240);
 }
@@ -215,10 +220,9 @@ input {
 }
 
 .main-content {
-    grid-row: min-content 1fr;
     display: grid;
     gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax( 250px, 1fr));
 }
 
@@ -281,4 +285,32 @@ input {
     box-sizing: border-box;
     padding: 1em;
     border-radius: 10px;
+}
+
+h5 {
+    margin-bottom: 0; 
+}
+
+.parts-of-articles {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.trending-profiles {
+    display: grid;
+    grid-auto-flow: column; 
+    justify-content:start;
+    align-items: center;
+    gap: 0 10px;
+    height: 5.5em;
+    line-height: 0.6em;
+}
+
+.avatar-icons {
+    height: 50px;
+    width: 50px;
+}
+
+.avatar-description {
+    color:rgb(143, 145, 148);
 }
